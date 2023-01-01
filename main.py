@@ -76,7 +76,7 @@ def close_db(error):
 		g.link_db.close()
 
 @app.route('/')
-@app.route('/Catalog')
+@app.route('/')
 @app.route('/Catalog')
 def catalog():
 	base = connect_db()
@@ -91,7 +91,7 @@ def login():
 		if user and check_password_hash(user['psw'], request.form['psw']):
 			userlogin = UserLogin().create(user)
 			login_user(userlogin)
-			return redirect('/home')
+			return redirect('/Basket')
 	return render_template('Login.html')
 
 @app.route('/REGmail', methods=['POST', 'GET'])
@@ -153,6 +153,7 @@ def about():
 	return render_template('/AboutUs.html')
 
 @app.route('/Basket')
+@login_required
 def basket():
 	return render_template('/basket.html')
 
