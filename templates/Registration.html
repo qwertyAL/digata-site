@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Regestration</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='Registration.css')}}">
+</head>
+<body>
+	<header>
+		<div class="All_header_menu">
+			<div class="Logo">
+				<h1>
+					<img src="{{ url_for('static', filename='logo.jpg')}}" width="100px">
+				</h1>
+			</div>
+			<div class="Top_menu">
+				<ul>
+					<li><a href="Catalog">Catalog</a></li>
+					<li><a href="Basket">Basket</a></li>
+					<li><a href="AboutUs">About Us</a></li>
+					<li><a href="Login">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<form class="reg" method="post">
+		<h1>
+			Registration
+		</h1>
+		<input type="text" class="form-control" name="Username" id="Username" placeholder="Username">
+		<input type="password" class="form-control" name="Password" id="Password" placeholder="Password">
+		<input type="text" class="form-control" name="Mail" placeholder="Mail">
+		<input type="submit" name="" value="Registration">
+	</form>
+</body>
+</html>

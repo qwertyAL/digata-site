@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='AboutUs.css')}}">
+</head>
+<body>
+    <header>
+		<div class="All_header_menu">
+			<div class="Logo">
+				<h1>
+					<img src="{{ url_for('static', filename='logo.jpg')}}" width="100px">
+				</h1>
+			</div>
+			<div class="Top_menu">
+				<ul>
+					<li><a href="Catalog">Catalog</a></li>
+                    <li><a href="Basket">Basket</a></li>
+					<li><a href="AboutUs">About Us</a></li>
+					<li><a href="Login">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+    <div class="container">
+        <div class="AboutH1">
+            <h1>
+                About Us
+            </h1>
+        </div>
+        <div class="about">
+            
+            <p>Digata is an online clothing store. In fact, the store does not exits,
+            and this project was created to show what kind of foundation any
+            online store should have, because many, even with the development of
+            the store, stop only at promotion is social networks.</p>
+            
+        </div>
+        <div class="dev">
+            <p>developer: <a href="https://vk.com/icitctuvyivohbho">Iksanov Sergey</a></p>
+        </div>
+    </div>
+</body>
+</html>

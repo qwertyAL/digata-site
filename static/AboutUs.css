@@ -1,0 +1,89 @@
+{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: black;
+	color: white;
+}
+header{
+	display: flex;
+	justify-content: center;
+}
+.Top_menu{
+	margin-right: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	background: #1a1a1a;
+	border-radius: 20px;
+}
+.Logo{
+	margin-right: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.Top_menu li{
+	margin-right: 25px;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+.Top_menu a{
+	vertical-align: middle;
+	font-family: arial;
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+}
+.Top_menu a:hover{
+	color: #DA70D6;
+}
+.Logo h1{
+	vertical-align: middle;
+}
+
+.container {
+    width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: #1a1a1a;
+	border-radius: 20px;
+}
+
+.AboutH1 {
+    color: white;
+	text-transform: uppercase;
+	font-family: arial;
+	font-weight: 500;
+}
+
+.about {
+	font-family: arial;
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+}
+
+.dev {
+	font-family: arial;
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+}
+
+.dev a {
+    vertical-align: center;
+	font-family: arial;
+	font-size: 15px;
+	color: #DA70D6;
+	text-decoration: none;
+	position: absolute;
+}
+
+.dev a:hover{
+	color: white;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='Catalog.css')}}">
+</head>
+<body>
+	<header>
+		<div class="All_header_menu">
+			<div class="Logo">
+				<h1>
+					<img src="{{ url_for('static', filename='logo.jpg')}}" width="100px">
+				</h1>
+			</div>
+			<div class="Top_menu">
+				<ul>
+					<li><a href="Catalog">Catalog</a></li>
+					<li><a href="Basket">Basket</a></li>
+					<li><a href="AboutUs">About Us</a></li>
+					<li><a href="Login">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="conttainer mt-5">
+		<div class="row">
+			{% for el in product %}
+				<div class="col-md-4">
+					<div class="product">
+						<div class="image">
+							<img src="{{ el.image }}" alt="">
+						</div>
+						<div class="info">
+							<h3>{{ el.name }}</h3>
+							<div class="info-price">
+								<span class="price">{{ el.prise }}<small>₽</small></span>
+								<button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

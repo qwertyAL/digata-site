@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS users (
+id integer PRIMARY KEY AUTOINCREMENT,
+name text NOT NULL,
+password text NOT NULL,
+mail text NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS product (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT NOT NULL,
+prise INTEGER NOT NULL,
+description TEXT NOT NULL,
+image TEXT NOT NULL
+);
